@@ -10,10 +10,10 @@ class Solution:
         if not intervals:
             return []
 
-        # Step 1: Sort intervals based on their start times
+        #Sort intervals based on their start times
         intervals.sort(key=lambda x: x[0])
 
-        # Step 2: Merge overlapping intervals
+        #Merge overlapping intervals
         merged_intervals = [intervals[0]]
         for interval in intervals[1:]:
             if interval[0] <= merged_intervals[-1][1]:
