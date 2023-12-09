@@ -11,7 +11,7 @@ class Solution:
 
         # Iterate while both lists are not empty
         while list1 and list2:
-            # Compare values and append the smaller node to the merged list
+            # append the smaller node to the merged list
             if list1.val < list2.val:
                 current.next = list1
                 list1 = list1.next
