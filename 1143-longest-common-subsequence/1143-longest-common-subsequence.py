@@ -2,7 +2,7 @@ class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         m, n = len(text1), len(text2)
         
-        # Initialize a 2D array to store the lengths of common subsequences
+        # to store the lengths of common subsequences
         dp = [[0] * (n + 1) for _ in range(m + 1)]
         
         # Fill the dp array using bottom-up dynamic programming
