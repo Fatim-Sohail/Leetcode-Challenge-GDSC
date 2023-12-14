@@ -1,10 +1,8 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-        # Check for empty array
         if not nums:
             return 0
         
-        # Initialize pointers
         slow_ptr = 0
 
         # Iterate through the array with fast pointer
