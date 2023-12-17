@@ -11,7 +11,6 @@ class Solution:
         
         total_count = 0
 
-        # Consider each character and its potential center
         for i in range(len(s)):
             # Count palindromes with odd length
             total_count += countPalindromes(i, i)
